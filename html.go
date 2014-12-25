@@ -264,7 +264,7 @@ func (options *Html) BlockCode(out *bytes.Buffer, text []byte, lang string) {
 			continue
 		}
 		if count == 0 {
-			out.WriteString("<pre><code class=\"language-")
+			out.WriteString("<pre><code class=\"prettyprint lang-")
 		} else {
 			out.WriteByte(' ')
 		}
